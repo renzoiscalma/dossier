@@ -1,4 +1,4 @@
-import Page from "../interfaces/Page";
+import Page from "../types/Page";
 import Content from "./Content";
 import Header from "./Header";
 
@@ -6,6 +6,7 @@ interface LayoutProps {
   pages: Page[];
   currentPage: Page;
   handlePageChange(page: Page): void;
+  switchTheme(): void;
 }
 
 const Layout = (props: LayoutProps) => {

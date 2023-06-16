@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import Page from "../interfaces/Page";
+import Page from "../types/Page";
 import About from "./Pages/About";
 import Career from "./Pages/Career";
 import Contact from "./Pages/Contact";

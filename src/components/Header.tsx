@@ -1,8 +1,9 @@
-import Page from "../interfaces/Page";
+import Page from "../types/Page";
 
 interface HeaderProps {
   pages: Page[];
   handlePageChange(page: Page): void;
+  switchTheme(): void;
 }
 
 const Header = (props: HeaderProps) => {
@@ -10,11 +11,12 @@ const Header = (props: HeaderProps) => {
     <>
       {props.pages.map((value, index) => {
         return (
-          <span onClick={() => props.handlePageChange(value)}>{`0${
+          <span onClick={() => props.handlePageChange(value)} key={value}>{`0${
             index + 1
           }. < ${value} >`}</span>
         );
       })}
+      <span onClick={() => props.switchTheme()}> change theme </span>
     </>
   );
 };
