@@ -1,6 +1,6 @@
 import Page from "../types/Page";
 import Content from "./Content";
-import Header from "./Header";
+import Navbar from "./Navbar";
 
 interface LayoutProps {
   pages: Page[];
@@ -12,7 +12,7 @@ interface LayoutProps {
 const Layout = (props: LayoutProps) => {
   return (
     <>
-      <Header {...props} />
+      <Navbar {...props} />
       <Content currentPage={props.currentPage} />
     </>
   );

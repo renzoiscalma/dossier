@@ -7,7 +7,7 @@ interface HeaderProps {
   currentPage: Page;
 }
 
-const Header = (props: HeaderProps) => {
+const Navbar = (props: HeaderProps) => {
   return (
     <>
       {props.pages.map((value, index) => {
@@ -26,4 +26,4 @@ const Header = (props: HeaderProps) => {
   );
 };
 
-export default Header;
+export default Navbar;
