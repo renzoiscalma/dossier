@@ -33,14 +33,39 @@
 }
 
 .self-image {
+  display: flex;
   grid-area: image;
-  bottom: 0;
   padding-right: 20px;
   margin-top: auto;
 }
 
 .self-image > img {
+  width: 26em;
+}
+
+.img-custom-border-container {
+  position: absolute;
+  width: 22em;
+  height: 16em;
+  margin-top: -3em;
+  margin-left: 7.4em;
+}
+
+.img-custom-border-right {
+  width: 5px;
+  background-color: var(--text-secondary);
+  height: 100%;
+  border-radius: 27px;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.img-custom-border-top {
+  height: 5px;
+  background-color: var(--text-secondary);
   width: 100%;
+  border-radius: 27px;
 }
 
 .heading {

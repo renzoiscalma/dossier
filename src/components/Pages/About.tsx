@@ -18,9 +18,13 @@ const About = () => {
         <h1>Hi, I'm Renzo</h1>
         <h1 className={styles["heading-webdev"]}>Web Developer </h1>
       </div>
-      <div className={styles["self-image"]}>
+      <figure className={styles["self-image"]}>
         <img src={ImgPortrait} alt="self-portrait-developer" />
-      </div>
+        <div className={styles["img-custom-border-container"]}>
+          <div className={styles["img-custom-border-top"]} />
+          <div className={styles["img-custom-border-right"]} />
+        </div>
+      </figure>
       <div className={styles["description"]}>
         <p>
           I'm a developer based in Canada. I make stuff happen since 2018.
