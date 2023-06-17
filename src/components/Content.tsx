@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import Page from "../types/Page";
+import style from "./../stylesheets/Content.module.css";
 import About from "./Pages/About";
 import Career from "./Pages/Career";
 import Contact from "./Pages/Contact";
@@ -28,7 +29,7 @@ const Content = (props: ContentProps) => {
     }
   }, [props.currentPage]);
 
-  return <div>{renderContent()}</div>;
+  return <div className={style.container}>{renderContent()}</div>;
 };
 
 export default Content;

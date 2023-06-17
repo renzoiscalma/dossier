@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Navbar = (props: HeaderProps) => {
   return (
-    <>
+    <div>
       {props.pages.map((value, index) => {
         return (
           <span
@@ -22,7 +22,7 @@ const Navbar = (props: HeaderProps) => {
         );
       })}
       <span onClick={() => props.switchTheme()}> change theme </span>
-    </>
+    </div>
   );
 };
 
