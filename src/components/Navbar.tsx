@@ -1,4 +1,5 @@
-import styles from "../stylesheets/PageLinks.module.css";
+import styles from "../stylesheets/Navbar.module.css";
+
 import Page from "../types/Page";
 interface HeaderProps {
   pages: Page[];
@@ -9,15 +10,19 @@ interface HeaderProps {
 
 const Navbar = (props: HeaderProps) => {
   return (
-    <div>
+    <div className={styles["item-container"]}>
       {props.pages.map((value, index) => {
         return (
           <span
-            className={props.currentPage === value ? styles.active : ""}
+            className={styles.item}
             onClick={() => props.handlePageChange(value)}
             key={value}
           >
-            {`0${index + 1}. < ${value} >`}
+            <span className={styles.number}>{`0${index + 1}.`}</span>
+            <span className={styles.page}>{`<${value}>`}</span>
+            {props.currentPage === value && (
+              <div className={styles.underline}></div>
+            )}
           </span>
         );
       })}

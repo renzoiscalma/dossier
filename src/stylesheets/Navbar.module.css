@@ -1,0 +1,27 @@
+.item-container {
+  display: flex;
+  justify-content: flex-end;
+  font-family: FiraCode-Regular;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 36px;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.number {
+  color: var(--text-secondary);
+  margin-right: 10px;
+}
+
+.item {
+  margin-right: 24px;
+}
+
+.underline {
+  width: 50%;
+  background-color: var(--lines);
+  height: 5px;
+  border-radius: 27px;
+  margin-top: 12px;
+}

@@ -18,11 +18,18 @@ body {
     url("./fonts/GlacialIndifference-Regular.otf");
 }
 
+@font-face {
+  font-family: FiraCode-Regular;
+  font-style: normal;
+  src: local("FiraCode-Regular"), url("./fonts/FiraCode-Regular.ttf");
+}
+
 :root {
   font-family: GlacialIndifference-Regular;
   --background: #fcfcfc;
   --text-primary: #383838;
   --text-secondary: #646aff;
+  --lines: #464dff;
   --accent: purple;
 }
 
@@ -30,5 +37,6 @@ body {
   --background: #1d2c33;
   --text-primary: #f5f5f5;
   --text-secondary: #00d1c7;
+  --lines: #00f2e5;
   --accent: darkred;
 }

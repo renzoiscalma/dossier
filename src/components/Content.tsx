@@ -4,8 +4,8 @@ import style from "./../stylesheets/Content.module.css";
 import About from "./Pages/About";
 import Career from "./Pages/Career";
 import Contact from "./Pages/Contact";
+import Default from "./Pages/Default";
 import Portfolio from "./Pages/Portfolio";
-import Skills from "./Pages/Skills";
 
 interface ContentProps {
   currentPage: Page;
@@ -14,18 +14,18 @@ const Content = (props: ContentProps) => {
   // memoize this function instead of using a function per change of props
   const renderContent = useCallback(() => {
     switch (props.currentPage) {
-      case "about":
-        return <About />;
+      case "index":
+        return <Default />;
       case "career":
         return <Career />;
       case "contact":
         return <Contact />;
       case "portfolio":
         return <Portfolio />;
-      case "skills":
-        return <Skills />;
-      default:
+      case "about":
         return <About />;
+      default:
+        return <Default />;
     }
   }, [props.currentPage]);
 

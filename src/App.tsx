@@ -7,8 +7,8 @@ import Theme from "./types/Theme";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const pages: Page[] = ["about", "skills", "portfolio", "career", "contact"];
-  const [currentPage, setCurrentPage] = useState<Page>("about");
+  const pages: Page[] = ["index", "about", "portfolio", "career", "contact"];
+  const [currentPage, setCurrentPage] = useState<Page>("index");
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
