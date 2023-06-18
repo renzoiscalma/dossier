@@ -1,0 +1,27 @@
+.container {
+  margin: 0 10em;
+  margin-top: 5em;
+}
+
+.heading {
+  font-family: FiraCode-Regular;
+}
+
+.number {
+  color: var(--text-secondary);
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.paragraph {
+  font-size: 27px;
+}
+
+.end-heading {
+  text-align: right;
+}
+
+.sub-heading {
+  font-family: Poppins-Regular;
+  color: var(--text-secondary);
+}

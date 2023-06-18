@@ -2,6 +2,7 @@ import { ReactComponent as GithubSVG } from "../../assets/brand-github.svg";
 import chatterImg from "../../assets/chatter-cover.png";
 import { ReactComponent as ExternalSVG } from "../../assets/external-link.svg";
 import styles from "../../stylesheets/Card.module.css";
+
 interface CardProps {
   src: string;
   techStack: string[];
