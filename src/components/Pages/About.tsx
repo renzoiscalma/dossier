@@ -1,14 +1,14 @@
-import styles from "../../stylesheets/About.module.css";
+import commonStyles from "../../stylesheets/Common.module.css";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={commonStyles.container}>
       <div>
-        <h1 className={styles.heading}>
-          <span className={styles.number}>02.</span>
+        <h1 className={commonStyles.heading}>
+          <span className={commonStyles.number}>02.</span>
           <span>{`<a little about me>`}</span>
         </h1>
-        <p className={styles["about-paragraph"]}>
+        <p className={commonStyles["paragraph"]}>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,8 +19,8 @@ const About = () => {
         </p>
       </div>
       <div>
-        <h2 className={styles["sub-heading"]}>Finishing things fast</h2>
-        <p className={styles["about-paragraph"]}>
+        <h2 className={commonStyles["sub-heading"]}>Finishing things fast</h2>
+        <p className={commonStyles["paragraph"]}>
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -36,7 +36,7 @@ const About = () => {
           qui dolorem eum fugiat quo voluptas nulla pariatur?"
         </p>
       </div>
-      <h1 className={`${styles.heading} ${styles["end-heading"]}`}>
+      <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
         <span>{`</a little about me>`}</span>
       </h1>
     </div>

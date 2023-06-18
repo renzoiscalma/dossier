@@ -1,15 +1,15 @@
-import styles from "../../stylesheets/Portfolio.module.css";
+import commonStyles from "../../stylesheets/Common.module.css";
 import Card from "../Portfolio-Card/Card";
 
 const Portfolio = () => {
   return (
-    <div className={styles.container}>
+    <div className={commonStyles.container}>
       <div>
-        <h1 className={styles.heading}>
-          <span className={styles.number}>03.</span>
+        <h1 className={commonStyles.heading}>
+          <span className={commonStyles.number}>03.</span>
           <span>{`<portfolio>`}</span>
         </h1>
-        <p className={styles["portfolio-paragraph"]}>
+        <p className={commonStyles["paragraph"]}>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
