@@ -9,9 +9,24 @@ const Default = () => {
   return (
     <div className={styles.container}>
       <div className={styles["sidebar-left"]}>
-        <GitHubSVG className={styles.icon} />
-        <EmailSVG className={styles.icon} />
-        <LinkedInSVG className={styles.icon} />
+        <a
+          href="https://github.com/renzoiscalma/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <GitHubSVG className={styles.icon} />
+        </a>
+        <a href="mailto:jlpcalma@gmail.com">
+          <EmailSVG className={styles.icon} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/renzo-calma/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInSVG className={styles.icon} />
+        </a>
         <div className={styles.vLine} />
       </div>
       <div className={styles["heading"]}>

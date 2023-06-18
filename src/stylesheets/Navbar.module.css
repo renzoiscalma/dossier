@@ -1,3 +1,10 @@
+.burger-menu {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
 .item-container {
   display: flex;
   justify-content: flex-end;
@@ -24,4 +31,55 @@
   height: 5px;
   border-radius: 27px;
   margin-top: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .item-container {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .item-container {
+    font-size: 16px;
+    display: none;
+  }
+
+  .burger-menu {
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    font-family: FiraCode-Regular;
+    font-size: 25px;
+    margin-top: 36px;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .nav-menu {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 30px;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    padding-top: 3em;
+    padding-left: 3em;
+    font-family: FiraCode-Regular;
+  }
+
+  .nav-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .item {
+    margin-bottom: 10px;
+  }
 }

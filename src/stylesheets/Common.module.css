@@ -25,3 +25,24 @@
   font-family: Poppins-Regular;
   color: var(--text-secondary);
 }
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    margin: 0 4em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 3em;
+  }
+
+  .heading {
+    font-family: FiraCode-Regular;
+    font-size: 1.3em;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}

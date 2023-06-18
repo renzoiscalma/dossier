@@ -6,3 +6,23 @@
 .career {
   font-size: 27px;
 }
+
+@media only screen and (max-width: 1300px) {
+  .inline {
+    display: block;
+  }
+
+  .career {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inline {
+    display: block;
+  }
+
+  .career {
+    font-size: 18px;
+  }
+}
