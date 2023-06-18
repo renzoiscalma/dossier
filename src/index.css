@@ -31,6 +31,7 @@ body {
   --text-secondary: #646aff;
   --lines: #464dff;
   --accent: purple;
+  --pill: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="DARK"] {
@@ -39,4 +40,5 @@ body {
   --text-secondary: #00d1c7;
   --lines: #00f2e5;
   --accent: darkred;
+  --pill: rgba(255, 255, 255, 0.2);
 }

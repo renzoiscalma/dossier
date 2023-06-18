@@ -6,7 +6,7 @@ const About = () => {
       <div>
         <h1 className={commonStyles.heading}>
           <span className={commonStyles.number}>02.</span>
-          <span>{`<a little about me>`}</span>
+          <span>{`<a-little-about-me>`}</span>
         </h1>
         <p className={commonStyles["paragraph"]}>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -37,7 +37,7 @@ const About = () => {
         </p>
       </div>
       <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
-        <span>{`</a little about me>`}</span>
+        <span>{`</a-little-about-me>`}</span>
       </h1>
     </div>
   );

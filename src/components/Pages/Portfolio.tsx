@@ -1,5 +1,19 @@
 import commonStyles from "../../stylesheets/Common.module.css";
+import Project from "../../types/Project";
 import Card from "../Portfolio-Card/Card";
+
+import chatterImg from "../../assets/chatter-cover.png";
+
+const portfolioList: Project[] = [
+  {
+    src: chatterImg,
+    techStack: ["React", "TypeScript", "GraphQL"],
+    description: "Watch videos and chat with your friends!",
+    title: "Chatter",
+    githubURL: "https://github.com/renzoiscalma/chatter-web",
+    projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
+  },
+];
 
 const Portfolio = () => {
   return (
@@ -17,8 +31,13 @@ const Portfolio = () => {
         </p>
       </div>
       <div>
-        <Card></Card>
+        {portfolioList.map((portfolio) => (
+          <Card {...portfolio} />
+        ))}
       </div>
+      <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
+        <span>{`</portfolio>`}</span>
+      </h1>
     </div>
   );
 };

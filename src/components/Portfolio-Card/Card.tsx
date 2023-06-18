@@ -1,32 +1,33 @@
 import { ReactComponent as GithubSVG } from "../../assets/brand-github.svg";
-import chatterImg from "../../assets/chatter-cover.png";
 import { ReactComponent as ExternalSVG } from "../../assets/external-link.svg";
 import styles from "../../stylesheets/Card.module.css";
+import Project from "../../types/Project";
 
-interface CardProps {
-  src: string;
-  techStack: string[];
-  description: string;
-  title: string;
-}
-
-const Card = () => {
+const Card = (props: Project) => {
+  const { description, src, techStack, title, githubURL, projectURL } = props;
   return (
     <div className={styles.container}>
-      <img src={chatterImg} className={styles["cover-image"]} />
-      <div className={styles.title}>Chatter</div>
-      <div className={styles.description}>
-        {" "}
-        Watch and chat videos with your friends!
-      </div>
+      <img
+        src={src}
+        className={styles["cover-image"]}
+        alt={title + "-project"}
+      />
+      <div className={styles.title}>{title}</div>
+      <div className={styles.description}>{description}</div>
       <div className={styles["link-container"]}>
-        <ExternalSVG className={styles.icon} />
-        <GithubSVG className={styles.icon} />
+        <a href={projectURL} target="_blank" rel="noopener noreferrer">
+          <ExternalSVG className={styles.icon} />
+        </a>
+        <a href={githubURL} target="_blank" rel="noopener noreferrer">
+          <GithubSVG className={styles.icon} />
+        </a>
       </div>
       <div className={styles["techstack-container"]}>
-        <div className={styles.pill}>React</div>
-        <div className={styles.pill}>TypeScript</div>
-        <div className={styles.pill}>GraphQL</div>
+        {techStack.map((value, index) => (
+          <div className={styles.pill} key={index}>
+            {value}
+          </div>
+        ))}
       </div>
     </div>
   );
