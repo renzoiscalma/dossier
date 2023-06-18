@@ -1,0 +1,18 @@
+.heading {
+  font-family: FiraCode-Regular;
+}
+
+.portfolio-paragraph {
+  font-size: 27px;
+}
+
+.container {
+  margin: 0 10em;
+  margin-top: 5em;
+}
+
+.number {
+  color: var(--text-secondary);
+  font-weight: normal;
+  margin-right: 10px;
+}

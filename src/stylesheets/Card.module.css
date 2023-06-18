@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.cover-image {
+  width: 350px;
+}
+
+.techstack-container {
+  display: flex;
+  padding: 10px 24px;
+}
+
+.title {
+  font-family: Poppins-Regular;
+  font-weight: bold;
+  padding: 10px 24px;
+}
+
+.description {
+  font-family: Poppins-Regular;
+  padding: 5px 24px;
+}
+
+.pill {
+  font-family: FiraCode-Regular;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.link-container {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}

@@ -5,7 +5,7 @@ const About = () => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.heading}>
-          <span className={styles.number}>01.</span>
+          <span className={styles.number}>02.</span>
           <span>{`<a little about me>`}</span>
         </h1>
         <p className={styles["about-paragraph"]}>

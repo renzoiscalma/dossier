@@ -3,9 +3,8 @@
 }
 
 .sub-heading {
-  color: var(--text-secondary);
   font-family: Poppins-Regular;
-  /* font-weight: normal; */
+  color: var(--text-secondary);
 }
 
 .number {
