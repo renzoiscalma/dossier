@@ -2,5 +2,5 @@
   color: var(--text-primary);
   background-color: var(--background);
   min-height: 100vh;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { ReactComponent as BurgerSVG } from "../assets/burger-menu.svg";
 import styles from "../stylesheets/Navbar.module.css";
-
 import Page from "../types/Page";
 interface HeaderProps {
   pages: Page[];
@@ -37,7 +37,9 @@ const Navbar = (props: HeaderProps) => {
         <span onClick={() => props.switchTheme()}> change theme </span>
       </div>
       <div className={styles["burger-menu"]}>
-        <div onClick={() => handleToggleMenu()}>BURGER</div>
+        <div onClick={() => handleToggleMenu()}>
+          <BurgerSVG className={styles["burger-icon"]} />
+        </div>
       </div>
       <div
         className={`${styles["nav-menu"]} ${
