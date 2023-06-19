@@ -2,7 +2,6 @@ import { ReactComponent as GitHubSVG } from "../../assets/brand-github.svg";
 import { ReactComponent as EmailSVG } from "../../assets/email-message-inbox.svg";
 import { ReactComponent as LinkedInSVG } from "../../assets/linked-in.svg";
 import ImgPortrait from "../../assets/pc-img3.jpg";
-import buttonStyles from "../../stylesheets/Button.module.css";
 import styles from "../../stylesheets/Default.module.css";
 
 const Default = () => {
@@ -14,7 +13,6 @@ const Default = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           <GitHubSVG className={styles.icon} />
         </a>
         <a href="mailto:jlpcalma@gmail.com">
@@ -45,8 +43,25 @@ const Default = () => {
           I'm a developer based in Canada. I make stuff happen since 2018.
           Currently I focus on making people's experience on the web better.
         </p>
-        <div>
-          <button className={buttonStyles["contact-me"]}>Contact me</button>
+        <div className={styles["desc-links"]}>
+          <div className={styles.hLine} />
+          <a
+            href="https://github.com/renzoiscalma/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubSVG className={styles.icon} />
+          </a>
+          <a href="mailto:jlpcalma@gmail.com">
+            <EmailSVG className={styles.icon} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/renzo-calma/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInSVG className={styles.icon} />
+          </a>
         </div>
       </div>
       <div className={styles["sidebar-right"]}>
