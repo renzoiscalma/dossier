@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useMemo } from "react";
 import Page from "../types/Page";
 import style from "./../stylesheets/Content.module.css";
 import About from "./Pages/About";
@@ -12,7 +12,7 @@ interface ContentProps {
 }
 const Content = (props: ContentProps) => {
   // memoize this function instead of using a function per change of props
-  const renderContent = useCallback(() => {
+  const renderContent = useMemo(() => {
     switch (props.currentPage) {
       case "index":
         return <Default />;
@@ -29,7 +29,7 @@ const Content = (props: ContentProps) => {
     }
   }, [props.currentPage]);
 
-  return <div className={style.container}>{renderContent()}</div>;
+  return <div className={style.container}>{renderContent}</div>;
 };
 
 export default Content;

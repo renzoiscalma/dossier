@@ -22,7 +22,7 @@
 }
 
 .sub-heading {
-  font-family: Poppins-Regular;
+  font-family: var(--header-font-family);
   color: var(--text-secondary);
 }
 

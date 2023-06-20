@@ -1,9 +1,11 @@
 .container {
-  margin-top: 12em;
+  min-height: 50vh; /* for cls */
+  min-width: 50vh; /* for cls */
+  padding-top: 12em;
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 1.3fr minmax(660px, 7fr) 7fr 1.3fr;
+  grid-template-columns: 1.3fr minmax(660px, 7fr) minmax(20em, 7fr) 1.3fr;
   grid-template-rows: 1.75fr 1fr;
   grid-template-areas:
     "sb-left heading image sb-right"
@@ -35,7 +37,7 @@
   margin-bottom: 30px;
 }
 
-.self-image-container {
+.portrait {
   display: flex;
   grid-area: image;
   padding-right: 20px;
@@ -43,8 +45,10 @@
   align-items: center;
 }
 
+.img-container,
 .image {
   width: 28em;
+  height: 21em; /* for cls */
 }
 
 .img-custom-border-container {
@@ -73,7 +77,7 @@
 }
 
 .heading {
-  font-family: Poppins-Regular;
+  font-family: var(--header-font-family);
   grid-area: heading;
   font-size: 2.5em;
   display: flex;
@@ -124,9 +128,10 @@
   display: none;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .container {
-    margin: 7em 3em;
+    padding: 7em 3em;
+    padding-bottom: 0;
     grid-template-columns: minmax(545px, 2fr) auto;
     grid-template-rows: 1.75fr 1fr;
     grid-template-areas:
@@ -134,14 +139,16 @@
       "desc  desc";
   }
 
-  .self-image-container {
+  .portrait {
     margin-right: 60px;
     padding: 0;
     margin-left: 0;
   }
 
+  .img-container,
   .image {
     width: 24em;
+    height: 18em;
   }
 
   .sidebar-left {
@@ -192,7 +199,6 @@
 
 @media only screen and (max-width: 1050px) {
   .container {
-    margin: 7em 3em;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -204,8 +210,8 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 2em 3em;
-    margin-bottom: 0px;
+    padding: 2em 3em;
+    padding-bottom: 0px;
   }
 
   .img-custom-border-container {
@@ -215,12 +221,14 @@
     margin-left: 6em;
   }
 
-  .self-image-container {
+  .portrait {
     margin: 40px auto;
   }
 
+  .img-container,
   .image {
     width: 17em;
+    height: 12.75em;
   }
 
   .description {

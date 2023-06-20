@@ -11,6 +11,7 @@ body {
   font-family: Poppins-Regular;
   font-style: normal;
   src: local("Poppins-Regular"), url("./fonts/Poppins-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -18,16 +19,21 @@ body {
   font-style: normal;
   src: local("GlacialIndifference-Regular"),
     url("./fonts/GlacialIndifference-Regular.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: FiraCode-Regular;
   font-style: normal;
   src: local("FiraCode-Regular"), url("./fonts/FiraCode-Regular.ttf");
+  font-display: swap;
 }
 
 :root {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifference-Regular, "sans-serif";
+  --code-font-family: FiraCode-Regular, "Courier New", monospace;
+  --header-font-family: Poppins-Regular, "Arial", "sans-serif";
+  --normal-font-family: GlacialIndifference-Regular, "Arial", "sans-serif";
   --background: #fcfcfc;
   --text-primary: #383838;
   --text-secondary: #646aff;

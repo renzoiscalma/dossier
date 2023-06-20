@@ -1,12 +1,24 @@
+import { useEffect, useState } from "react";
 import { ReactComponent as GitHubSVG } from "../../assets/brand-github.svg";
 import { ReactComponent as EmailSVG } from "../../assets/email-message-inbox.svg";
 import { ReactComponent as LinkedInSVG } from "../../assets/linked-in.svg";
 import ImgPortrait from "../../assets/pc-img3.jpg";
+import revealStyles from "../../stylesheets/Animations.module.css";
 import styles from "../../stylesheets/Default.module.css";
 
 const Default = () => {
+  const [shown, setShown] = useState<boolean>(false);
+
+  useEffect(() => {
+    setShown(true);
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} 
+        ${revealStyles["reveal-animation"]} 
+        ${shown ? revealStyles.reveal : ""}`}
+    >
       <div className={styles["sidebar-left"]}>
         <a
           href="https://github.com/renzoiscalma/"
@@ -27,16 +39,19 @@ const Default = () => {
         </a>
         <div className={styles.vLine} />
       </div>
-      <div className={styles["heading"]}>
-        <h1>Hi, I'm Renzo</h1>
+      <div className={`${styles["heading"]}`}>
+        <h1 className={styles["heading-name"]}>Hi, I'm Renzo</h1>
         <h1 className={styles["heading-webdev"]}>Web Developer </h1>
       </div>
-      <figure className={styles["self-image-container"]}>
-        <img
-          src={ImgPortrait}
-          className={styles.image}
-          alt="self-portrait-developer"
-        />
+      <figure className={styles["portrait"]}>
+        <div className={styles["img-container"]}>
+          <img
+            rel="preload"
+            src={ImgPortrait}
+            className={styles.image}
+            alt="self-portrait-developer"
+          />
+        </div>
         <div className={styles["img-custom-border-container"]}>
           <div className={styles["img-custom-border-top"]} />
           <div className={styles["img-custom-border-right"]} />

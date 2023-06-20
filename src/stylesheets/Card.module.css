@@ -21,18 +21,18 @@
 }
 
 .title {
-  font-family: Poppins-Regular;
+  font-family: var(--header-font-family);
   font-weight: bold;
   padding: 10px 24px;
 }
 
 .description {
-  font-family: Poppins-Regular;
+  font-family: var(--header-font-family);
   padding: 5px 24px;
 }
 
 .pill {
-  font-family: FiraCode-Regular;
+  font-family: var(--code-font-family);
   font-size: 13px;
   background-color: var(--pill);
   padding: 10px 20px;

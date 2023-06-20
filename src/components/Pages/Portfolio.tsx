@@ -18,7 +18,7 @@ const portfolioList: Project[] = [
     src: chatterImg,
     techStack: ["React", "TypeScript", "GraphQL"],
     description: "Watch videos and chat with your friends!",
-    title: "Chatter",
+    title: "Dossier",
     githubURL: "https://github.com/renzoiscalma/chatter-web",
     projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
   },
@@ -26,7 +26,7 @@ const portfolioList: Project[] = [
     src: chatterImg,
     techStack: ["React", "TypeScript", "GraphQL"],
     description: "Watch videos and chat with your friends!",
-    title: "Chatter",
+    title: "Main-Page",
     githubURL: "https://github.com/renzoiscalma/chatter-web",
     projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
   },
@@ -49,7 +49,7 @@ const Portfolio = () => {
       </div>
       <div className={styles["project-container"]}>
         {portfolioList.map((portfolio) => (
-          <Card {...portfolio} />
+          <Card {...portfolio} key={portfolio.title} />
         ))}
       </div>
       <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>

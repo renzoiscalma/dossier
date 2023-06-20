@@ -12,7 +12,7 @@
   }
 
   .heading {
-    font-family: FiraCode-Regular;
+    font-family: var(--code-font-family);
     font-size: 1.3em;
   }
 
