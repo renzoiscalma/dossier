@@ -3,11 +3,11 @@
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 1.3fr 7fr 3fr 5fr 1.3fr;
+  grid-template-columns: 1.3fr minmax(660px, 7fr) 7fr 1.3fr;
   grid-template-rows: 1.75fr 1fr;
   grid-template-areas:
-    "sb-left heading heading image sb-right"
-    "sb-left desc desc desc sb-right";
+    "sb-left heading image sb-right"
+    "sb-left desc desc sb-right";
 }
 
 .sidebar-left {
@@ -30,11 +30,12 @@
 
 .sideway-text {
   writing-mode: vertical-rl;
+  font-size: 24px;
   text-orientation: mixed;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
-.self-image {
+.self-image-container {
   display: flex;
   grid-area: image;
   padding-right: 20px;
@@ -42,16 +43,16 @@
   align-items: center;
 }
 
-.self-image > img {
-  width: 26em;
+.image {
+  width: 28em;
 }
 
 .img-custom-border-container {
   position: absolute;
   width: 22em;
   height: 16em;
-  margin-top: -7em;
-  margin-left: 8em;
+  margin-top: -9em;
+  margin-left: 10em;
 }
 
 .img-custom-border-right {
@@ -123,7 +124,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1300px) {
   .container {
     margin: 7em 3em;
     grid-template-columns: minmax(545px, 2fr) auto;
@@ -133,13 +134,13 @@
       "desc  desc";
   }
 
-  .self-image {
+  .self-image-container {
     margin-right: 60px;
     padding: 0;
     margin-left: 0;
   }
 
-  .self-image > img {
+  .image {
     width: 24em;
   }
 
@@ -202,21 +203,28 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .img-custom-border-container {
-    display: none;
-  }
-
-  .self-image {
-    margin: 0px 20px;
-  }
-
-  .self-image > img {
-    width: 100%;
-  }
-
   .container {
-    margin: 0;
+    margin: 2em 3em;
     margin-bottom: 0px;
+  }
+
+  .img-custom-border-container {
+    width: 16em;
+    height: 13em;
+    margin-top: -4em;
+    margin-left: 6em;
+  }
+
+  .self-image-container {
+    margin: 40px auto;
+  }
+
+  .image {
+    width: 17em;
+  }
+
+  .description {
+    font-size: 19px;
   }
 
   .heading {
@@ -226,5 +234,19 @@
 
   .hLine {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .img-custom-border-container {
+    display: none;
+  }
+
+  .heading {
+    font-size: 1em;
+  }
+
+  .desc-links {
+    justify-content: center;
   }
 }

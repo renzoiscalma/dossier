@@ -31,8 +31,12 @@ const Default = () => {
         <h1>Hi, I'm Renzo</h1>
         <h1 className={styles["heading-webdev"]}>Web Developer </h1>
       </div>
-      <figure className={styles["self-image"]}>
-        <img src={ImgPortrait} alt="self-portrait-developer" />
+      <figure className={styles["self-image-container"]}>
+        <img
+          src={ImgPortrait}
+          className={styles.image}
+          alt="self-portrait-developer"
+        />
         <div className={styles["img-custom-border-container"]}>
           <div className={styles["img-custom-border-top"]} />
           <div className={styles["img-custom-border-right"]} />
