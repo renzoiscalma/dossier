@@ -1,0 +1,12 @@
+.reveal-animation {
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: 400ms;
+  transform: translate3d(0, 40px, 0);
+  transition: transform 0.5s, opacity 0.2s;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
