@@ -49,6 +49,7 @@
 .image {
   width: 28em;
   height: 21em; /* for cls */
+  z-index: 1;
 }
 
 .img-custom-border-container {
@@ -126,6 +127,34 @@
 
 .desc-links {
   display: none;
+}
+
+.gradient {
+  --size: 400px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  background-color: var(--text-secondary);
+  position: absolute;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -206,6 +235,10 @@
       "heading"
       "desc";
   }
+
+  .gradient {
+    --size: 350px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -248,6 +281,10 @@
 
   .desc-links {
     justify-content: center;
+  }
+
+  .gradient {
+    --size: 250px;
   }
 }
 

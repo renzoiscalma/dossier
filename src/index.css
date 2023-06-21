@@ -40,6 +40,7 @@ body {
   --lines: #464dff;
   --accent: purple;
   --pill: rgba(0, 0, 0, 0.1);
+  --background-img-url: url(./assets/circle-scatter-bg-light.svg);
 }
 
 [data-theme="DARK"] {
@@ -49,4 +50,5 @@ body {
   --lines: #00f2e5;
   --accent: darkred;
   --pill: rgba(255, 255, 255, 0.2);
+  --background-img-url: url(./assets/circle-scatter-bg-dark.svg);
 }

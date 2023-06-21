@@ -1,6 +1,7 @@
 .App {
   color: var(--text-primary);
   background-color: var(--background);
+  background-image: var(--background-img-url);
   min-height: 100vh;
   transition: all 0.3s;
 }

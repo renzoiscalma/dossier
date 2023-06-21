@@ -52,6 +52,7 @@ const Default = () => {
             alt="self-portrait-developer"
           />
         </div>
+        <div className={styles.gradient} />
         <div className={styles["img-custom-border-container"]}>
           <div className={styles["img-custom-border-top"]} />
           <div className={styles["img-custom-border-right"]} />
