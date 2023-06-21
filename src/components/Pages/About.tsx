@@ -1,8 +1,21 @@
+import { useEffect, useState } from "react";
+import revealStyles from "../../stylesheets/Animations.module.css";
 import commonStyles from "../../stylesheets/Common.module.css";
 
 const About = () => {
+  const [shown, setShown] = useState<boolean>(false);
+
+  useEffect(() => {
+    setShown(true);
+  }, []);
+
   return (
-    <div className={commonStyles.container}>
+    <div
+      className={`${commonStyles.container}
+          ${revealStyles["reveal-animation"]} 
+          ${shown ? revealStyles.reveal : ""}
+        `}
+    >
       <div>
         <h1 className={commonStyles.heading}>
           <span className={commonStyles.number}>02.</span>

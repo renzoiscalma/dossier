@@ -1,8 +1,10 @@
+import revealStyles from "../../stylesheets/Animations.module.css";
 import commonStyles from "../../stylesheets/Common.module.css";
 import styles from "../../stylesheets/Portfolio.module.css";
 import Project from "../../types/Project";
 import Card from "../Portfolio-Card/Card";
 
+import { useEffect, useState } from "react";
 import chatterImg from "../../assets/chatter-cover.png";
 
 const portfolioList: Project[] = [
@@ -33,8 +35,19 @@ const portfolioList: Project[] = [
 ];
 
 const Portfolio = () => {
+  const [shown, setShown] = useState<boolean>(false);
+
+  useEffect(() => {
+    setShown(true);
+  }, []);
+
   return (
-    <div className={commonStyles.container}>
+    <div
+      className={`${commonStyles.container}
+          ${revealStyles["reveal-animation"]} 
+          ${shown ? revealStyles.reveal : ""}
+        `}
+    >
       <div>
         <h1 className={commonStyles.heading}>
           <span className={commonStyles.number}>03.</span>
