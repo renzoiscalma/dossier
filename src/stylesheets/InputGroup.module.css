@@ -1,0 +1,77 @@
+.group-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  font-family: var(--header-font-family);
+  color: var(--text-primary);
+  font-size: 1.3em;
+  transition: all ease 0.5s;
+}
+
+.label.focused {
+  color: var(--text-secondary);
+}
+
+.input {
+  border: none;
+  border-bottom: var(--pill) 1px solid;
+  background: transparent;
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-size: 1.15em;
+  padding: 0.6em;
+  padding-left: 0;
+  outline: none;
+  font-family: var(--header-font-family);
+  transition: all ease 0.5s;
+  resize: none;
+}
+
+.input:focus-visible {
+  border-bottom: var(--text-secondary) 1px solid;
+  transition: all ease 0.5s;
+}
+
+/* for autofill  */
+.input:-internal-autofill-selected {
+  color: var(--text-primary) !important;
+  box-shadow: inset 0 0 0 1px var(--background),
+    inset 0 0 0 100px var(--background);
+  -webkit-text-fill-color: var(--text-primary) !important;
+  font-size: 1.15em;
+}
+/* for autofill  */
+
+.input:-webkit-autofill {
+  color: var(--text-primary) !important;
+  box-shadow: inset 0 0 0 1px var(--background),
+    inset 0 0 0 100px var(--background);
+  -webkit-text-fill-color: var(--text-primary) !important;
+  font-size: 1.15em;
+}
+.input:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  position: absolute;
+}
+
+.input::placeholder {
+  color: var(--text-primary);
+  opacity: 0.75;
+}
+
+@media only screen and (max-width: 768px) {
+  .input {
+    font-size: 0.8em;
+  }
+
+  .label {
+    font-size: 1em;
+  }
+}

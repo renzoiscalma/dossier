@@ -1,11 +1,11 @@
 .contact-me {
-  width: 136px;
-  height: 54px;
+  width: 260px;
+  height: 70px;
   background-color: var(--text-secondary);
   color: #fff;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.3em;
   font-family: var(--header-font-family);
 }
