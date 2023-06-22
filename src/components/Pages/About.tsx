@@ -22,31 +22,29 @@ const About = () => {
           <span>{`<a-little-about-me>`}</span>
         </h1>
         <p className={commonStyles["paragraph"]}>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          I've been a professional software engineer since 2018. I have been
+          given the privilege of working on great companies over the years.
+          Currently, I am making a mark on the freelance world, wanting to help
+          other people who would need my expertise in order to make their
+          products come to life. I love building projects and I enjoy the nitty
+          gritty aspect of creating optimized and efficient codes.
         </p>
       </div>
       <div>
-        <h2 className={commonStyles["sub-heading"]}>Finishing things fast</h2>
+        <h2 className={commonStyles["sub-heading"]}>
+          Finishing things fast 💨 & Planning things ✍️
+        </h2>
         <p className={commonStyles["paragraph"]}>
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          I always strive to deliver projects as fast as possible. We know the
+          consequence of finishing projects quickly is the accuracy of the
+          project. In order to mitigate mistakes that is possible to make is to
+          have a very great plan on how we'll be able to tackle the project.
+          Fortunately, I love planning things. Planning is one of the favorite
+          things that I do when I work on projects. I take my time to plan and
+          organize things. This makes life easier for both my clients and myself
+          because we are able to harmonize the goals that we intend to finish on
+          specific dates. Basically keep up with the set deadlines that we
+          intend to finish.
         </p>
       </div>
       <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
