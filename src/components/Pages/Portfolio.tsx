@@ -6,31 +6,33 @@ import Card from "../Portfolio-Card/Card";
 
 import { useEffect, useState } from "react";
 import chatterImg from "../../assets/chatter-cover.png";
+import dossierImg from "../../assets/dossier-cover.png";
+import mainPageImg from "../../assets/main-page.png";
 
 const portfolioList: Project[] = [
   {
     src: chatterImg,
-    techStack: ["React", "TypeScript", "GraphQL"],
+    techStack: ["React", "TypeScript", "GraphQL", "Redis"],
     description: "Watch videos and chat with your friends!",
     title: "Chatter",
     githubURL: "https://github.com/renzoiscalma/chatter-web",
     projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
   },
   {
-    src: chatterImg,
-    techStack: ["React", "TypeScript", "GraphQL"],
+    src: dossierImg,
+    techStack: ["React", "TypeScript", "CSS"],
     description: "Watch videos and chat with your friends!",
     title: "Dossier",
-    githubURL: "https://github.com/renzoiscalma/chatter-web",
-    projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
+    githubURL: "https://github.com/renzoiscalma/dossier",
+    projectURL: "https://renzoiscalma.github.io/dossier/",
   },
   {
-    src: chatterImg,
-    techStack: ["React", "TypeScript", "GraphQL"],
-    description: "Watch videos and chat with your friends!",
+    src: mainPageImg,
+    techStack: ["React", "TypeScript", "Material-ui"],
+    description: "A simple hero page",
     title: "Main-Page",
-    githubURL: "https://github.com/renzoiscalma/chatter-web",
-    projectURL: "https://renzoiscalma.github.io/chatter-web-fe/",
+    githubURL: "https://github.com/renzoiscalma/main-page",
+    projectURL: "https://renzoiscalma.github.io/main-page/",
   },
 ];
 
@@ -54,10 +56,7 @@ const Portfolio = () => {
           <span>{`<portfolio>`}</span>
         </h1>
         <p className={commonStyles["paragraph"]}>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          These are some of the projects that I have made.
         </p>
       </div>
       <div className={styles["project-container"]}>

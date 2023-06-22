@@ -23,31 +23,31 @@ const Career = () => {
           <span>{`<my-working-career>`}</span>
         </h1>
         <p className={commonStyles["paragraph"]}>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          I have built and maintained products for numerous companies over the
+          years. Garnering extensive knowledge in software development and web
+          development in general. I'll always take pride in contributing a lot
+          to make a lot of things better.
         </p>
       </div>
       <div>
         <h2 className={`${commonStyles["sub-heading"]} ${styles["inline"]}`}>
-          Software Engineer
+          Software Engineer @
         </h2>
         <span className={styles.career}>
-          @ Samsung Research and Development Philippines
+          Samsung Research and Development Philippines
         </span>
       </div>
       <div>
         <h2 className={`${commonStyles["sub-heading"]} ${styles["inline"]}`}>
-          Full-Stack Software Engineer
+          Full-Stack Software Engineer @
         </h2>
-        <span className={styles.career}>@ Balsam Brands</span>
+        <span className={styles.career}>Balsam Brands</span>
       </div>
       <div>
         <h2 className={`${commonStyles["sub-heading"]} ${styles["inline"]}`}>
-          Software Engineer
+          Software Engineer @
         </h2>
-        <span className={styles.career}>@ PCCW Solutions Philippines</span>
+        <span className={styles.career}> PCCW Solutions Philippines</span>
       </div>
       <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
         <span>{`</my-working-career>`}</span>
