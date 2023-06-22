@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { ReactComponent as BurgerSVG } from "../assets/burger-menu.svg";
+import { ReactComponent as DarkSVG } from "../assets/dark-theme.svg";
+import { ReactComponent as LightSVG } from "../assets/light-theme.svg";
+
 import styles from "../stylesheets/Navbar.module.css";
 import Page from "../types/Page";
+import Theme from "../types/Theme";
 interface HeaderProps {
   pages: Page[];
   handlePageChange(page: Page): void;
   switchTheme(): void;
   currentPage: Page;
+  currentTheme: Theme;
 }
 
 const Navbar = (props: HeaderProps) => {
@@ -18,7 +23,7 @@ const Navbar = (props: HeaderProps) => {
 
   return (
     <>
-      <div className={styles["item-container"]}>
+      <nav className={styles["item-container"]}>
         {props.pages.map((value, index) => {
           return (
             <span
@@ -34,21 +39,28 @@ const Navbar = (props: HeaderProps) => {
             </span>
           );
         })}
-        <span onClick={() => props.switchTheme()}> change theme </span>
-      </div>
+        <span onClick={() => props.switchTheme()}>
+          {props.currentTheme === "DARK" && (
+            <DarkSVG className={styles["theme-icon-dark"]} />
+          )}
+          {props.currentTheme === "LIGHT" && (
+            <LightSVG className={styles["theme-icon-light"]} />
+          )}
+        </span>
+      </nav>
       <div className={styles["burger-menu"]}>
         <div onClick={() => handleToggleMenu()}>
           <BurgerSVG className={styles["burger-icon"]} />
         </div>
       </div>
-      <div
+      <nav
         className={`${styles["nav-menu"]} ${
           openMenu ? styles["nav-open"] : ""
         }`}
       >
         {props.pages.map((value, index) => {
           return (
-            <span
+            <div
               className={styles.item}
               onClick={() => {
                 props.handlePageChange(value);
@@ -61,11 +73,22 @@ const Navbar = (props: HeaderProps) => {
               {props.currentPage === value && (
                 <div className={styles.underline}></div>
               )}
-            </span>
+            </div>
           );
         })}
-        <span onClick={() => props.switchTheme()}> change theme </span>
-      </div>
+        <div
+          onClick={() => props.switchTheme()}
+          className={styles["mobile-theme-container"]}
+        >
+          {props.currentTheme === "DARK" && (
+            <LightSVG className={styles["theme-icon-light"]} />
+          )}
+          {props.currentTheme === "LIGHT" && (
+            <DarkSVG className={styles["theme-icon-dark"]} />
+          )}
+          Switch Theme
+        </div>
+      </nav>
     </>
   );
 };

@@ -9,9 +9,9 @@ function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const pages: Page[] = ["index", "about", "portfolio", "career", "contact"];
   const [currentPage, setCurrentPage] = useState<Page>("index");
-  const [theme, setTheme] = useLocalStorage(
+  const [theme, setTheme] = useLocalStorage<Theme>(
     "theme",
-    defaultDark ? "dark" : "light"
+    defaultDark ? "DARK" : "DARK"
   );
 
   const handlePageChange = (page: Page): void => {
@@ -32,6 +32,7 @@ function App() {
         currentPage={currentPage}
         handlePageChange={handlePageChange}
         switchTheme={switchTheme}
+        currentTheme={theme}
       />
     </div>
   );

@@ -1,6 +1,7 @@
 .container {
   margin: 0 10em;
   margin-top: 5em;
+  overflow: hidden;
 }
 
 .heading {
@@ -29,6 +30,7 @@
 @media only screen and (max-width: 1300px) {
   .container {
     margin: 0 4em;
+    margin-top: 3em;
   }
 }
 
