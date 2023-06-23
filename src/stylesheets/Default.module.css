@@ -48,7 +48,6 @@
 .img-container,
 .image {
   width: 28em;
-  height: 21em; /* for cls */
   z-index: 1;
 }
 
@@ -56,8 +55,8 @@
   position: absolute;
   width: 22em;
   height: 16em;
-  margin-top: -9em;
-  margin-left: 10em;
+  margin-top: -4em;
+  margin-left: 2em;
 }
 
 .img-custom-border-right {
@@ -177,7 +176,6 @@
   .img-container,
   .image {
     width: 24em;
-    height: 18em;
   }
 
   .sidebar-left {
@@ -191,8 +189,8 @@
   .img-custom-border-container {
     width: 19em;
     height: 16em;
-    margin-top: -7em;
-    margin-left: 11em;
+    margin-top: -4em;
+    margin-left: 2em;
   }
 
   .heading {
@@ -252,8 +250,8 @@
   .img-custom-border-container {
     width: 16em;
     height: 13em;
-    margin-top: -4em;
-    margin-left: 6em;
+    margin-top: 1em;
+    margin-left: 0;
   }
 
   .portrait {
@@ -263,7 +261,6 @@
   .img-container,
   .image {
     width: 17em;
-    height: 12.75em;
   }
 
   .description {

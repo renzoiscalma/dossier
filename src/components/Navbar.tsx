@@ -26,7 +26,7 @@ const Navbar = (props: HeaderProps) => {
       <nav className={styles["item-container"]}>
         {props.pages.map((value, index) => {
           return (
-            <span
+            <div
               className={styles.item}
               onClick={() => props.handlePageChange(value)}
               key={value}
@@ -36,17 +36,20 @@ const Navbar = (props: HeaderProps) => {
               {props.currentPage === value && (
                 <div className={styles.underline}></div>
               )}
-            </span>
+            </div>
           );
         })}
-        <span onClick={() => props.switchTheme()}>
+        <div
+          onClick={() => props.switchTheme()}
+          className={styles["theme-container"]}
+        >
           {props.currentTheme === "DARK" && (
             <DarkSVG className={styles["theme-icon-dark"]} />
           )}
           {props.currentTheme === "LIGHT" && (
             <LightSVG className={styles["theme-icon-light"]} />
           )}
-        </span>
+        </div>
       </nav>
       <div className={styles["burger-menu"]}>
         <div onClick={() => handleToggleMenu()}>
@@ -78,7 +81,7 @@ const Navbar = (props: HeaderProps) => {
         })}
         <div
           onClick={() => props.switchTheme()}
-          className={styles["mobile-theme-container"]}
+          className={styles["theme-container"]}
         >
           {props.currentTheme === "DARK" && (
             <LightSVG className={styles["theme-icon-light"]} />

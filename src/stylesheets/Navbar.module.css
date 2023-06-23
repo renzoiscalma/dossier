@@ -55,7 +55,7 @@
   height: 32px;
 }
 
-.mobile-theme-container {
+.theme-container {
   display: flex;
   align-items: center;
   column-gap: 18px;

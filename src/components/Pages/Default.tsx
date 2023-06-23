@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ReactComponent as GitHubSVG } from "../../assets/brand-github.svg";
 import { ReactComponent as EmailSVG } from "../../assets/email-message-inbox.svg";
 import { ReactComponent as LinkedInSVG } from "../../assets/linked-in.svg";
-import ImgPortrait from "../../assets/pc-img3.jpg";
+import ImgPortrait from "../../assets/portrait-no-bg.gif";
 import revealStyles from "../../stylesheets/Animations.module.css";
 import styles from "../../stylesheets/Default.module.css";
 
