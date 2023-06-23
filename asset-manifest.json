@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/dossier/static/css/main.b16e6e31.css",
-    "main.js": "/dossier/static/js/main.ec1bc622.js",
+    "main.css": "/dossier/static/css/main.f97250a6.css",
+    "main.js": "/dossier/static/js/main.df5e1273.js",
     "static/js/787.072cfc38.chunk.js": "/dossier/static/js/787.072cfc38.chunk.js",
     "static/media/chatter-cover.png": "/dossier/static/media/chatter-cover.68d9084c7ea55abf3a28.png",
     "static/media/dossier-cover.png": "/dossier/static/media/dossier-cover.bc770bc3f4761a4cb931.png",
-    "static/media/pc-img3.jpg": "/dossier/static/media/pc-img3.d622d3a02ee074eadd6e.jpg",
     "static/media/FiraCode-Regular.ttf": "/dossier/static/media/FiraCode-Regular.ea32261131becc79ea84.ttf",
     "static/media/main-page.png": "/dossier/static/media/main-page.dfc29f4c59fca772ff47.png",
     "static/media/Poppins-Regular.ttf": "/dossier/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -20,12 +19,12 @@
     "static/media/light-theme.svg": "/dossier/static/media/light-theme.c0c0f9cf804f90fbec731193677518c5.svg",
     "static/media/burger-menu.svg": "/dossier/static/media/burger-menu.bcfcf05300ed3b0bed8e1a6c76914a9c.svg",
     "static/media/email-message-inbox.svg": "/dossier/static/media/email-message-inbox.5a8d7564c6c3492b9806d8946e04d27d.svg",
-    "main.b16e6e31.css.map": "/dossier/static/css/main.b16e6e31.css.map",
-    "main.ec1bc622.js.map": "/dossier/static/js/main.ec1bc622.js.map",
+    "main.f97250a6.css.map": "/dossier/static/css/main.f97250a6.css.map",
+    "main.df5e1273.js.map": "/dossier/static/js/main.df5e1273.js.map",
     "787.072cfc38.chunk.js.map": "/dossier/static/js/787.072cfc38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16e6e31.css",
-    "static/js/main.ec1bc622.js"
+    "static/css/main.f97250a6.css",
+    "static/js/main.df5e1273.js"
   ]
 }
