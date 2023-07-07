@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dossier/static/css/main.f97250a6.css",
-    "main.js": "/dossier/static/js/main.df5e1273.js",
+    "main.js": "/dossier/static/js/main.5eba4338.js",
     "static/js/787.072cfc38.chunk.js": "/dossier/static/js/787.072cfc38.chunk.js",
-    "static/media/chatter-cover.png": "/dossier/static/media/chatter-cover.68d9084c7ea55abf3a28.png",
     "static/media/dossier-cover.png": "/dossier/static/media/dossier-cover.bc770bc3f4761a4cb931.png",
     "static/media/FiraCode-Regular.ttf": "/dossier/static/media/FiraCode-Regular.ea32261131becc79ea84.ttf",
     "static/media/main-page.png": "/dossier/static/media/main-page.dfc29f4c59fca772ff47.png",
     "static/media/Poppins-Regular.ttf": "/dossier/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/chatter-cover.png": "/dossier/static/media/chatter-cover.1e5bfd0d724df369365d.png",
     "static/media/GlacialIndifference-Regular.otf": "/dossier/static/media/GlacialIndifference-Regular.663a1c12d079e631b0b2.otf",
     "static/media/dark-theme.svg": "/dossier/static/media/dark-theme.70cbe88f4d14fc8f6f2fad08959d9694.svg",
     "static/media/circle-scatter-bg-dark.svg": "/dossier/static/media/circle-scatter-bg-dark.4fdec9159f94fa0ce6e9.svg",
@@ -20,11 +20,11 @@
     "static/media/burger-menu.svg": "/dossier/static/media/burger-menu.bcfcf05300ed3b0bed8e1a6c76914a9c.svg",
     "static/media/email-message-inbox.svg": "/dossier/static/media/email-message-inbox.5a8d7564c6c3492b9806d8946e04d27d.svg",
     "main.f97250a6.css.map": "/dossier/static/css/main.f97250a6.css.map",
-    "main.df5e1273.js.map": "/dossier/static/js/main.df5e1273.js.map",
+    "main.5eba4338.js.map": "/dossier/static/js/main.5eba4338.js.map",
     "787.072cfc38.chunk.js.map": "/dossier/static/js/787.072cfc38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f97250a6.css",
-    "static/js/main.df5e1273.js"
+    "static/js/main.5eba4338.js"
   ]
 }
