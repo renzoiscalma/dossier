@@ -7,15 +7,11 @@ import Theme from "./types/Theme";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const pages: Page[] = ["index", "about", "portfolio", "career", "contact"];
+  const pages: Page[] = ["index", "about", "portfolio", "skills", "career", "contact"];
   const [currentPage, setCurrentPage] = useState<Page>("index");
-  const [theme, setTheme] = useLocalStorage<Theme>(
-    "theme",
-    defaultDark ? "DARK" : "DARK"
-  );
+  const [theme, setTheme] = useLocalStorage<Theme>("theme", defaultDark ? "DARK" : "DARK");
 
   const handlePageChange = (page: Page): void => {
-    // TODO: promises on page transition :D
     setCurrentPage(page);
   };
 

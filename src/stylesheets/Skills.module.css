@@ -1,0 +1,7 @@
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  column-gap: 2px;
+}

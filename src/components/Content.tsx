@@ -6,6 +6,7 @@ import Career from "./Pages/Career";
 import Contact from "./Pages/Contact";
 import Default from "./Pages/Default";
 import Portfolio from "./Pages/Portfolio";
+import Skills from "./Pages/Skills";
 
 interface ContentProps {
   currentPage: Page;
@@ -24,6 +25,8 @@ const Content = (props: ContentProps) => {
         return <Portfolio />;
       case "about":
         return <About />;
+      case "skills":
+        return <Skills />;
       default:
         return <Default />;
     }

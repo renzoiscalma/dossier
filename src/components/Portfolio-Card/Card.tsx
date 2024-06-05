@@ -2,23 +2,48 @@ import { ReactComponent as GithubSVG } from "../../assets/brand-github.svg";
 import { ReactComponent as ExternalSVG } from "../../assets/external-link.svg";
 import styles from "../../stylesheets/Card.module.css";
 import Project from "../../types/Project";
+import Thumbnails from "./Thumbnails";
 
-const Card = (props: Project) => {
-  const { description, src, techStack, title, githubURL, projectURL } = props;
+type CardProps = Project & {
+  index: number;
+  handleCardClick: (index: number) => void;
+};
+
+const Card = (props: CardProps) => {
+  const {
+    video,
+    image,
+    description,
+    thumbnail,
+    techStack,
+    title,
+    githubURL,
+    projectURL,
+    handleCardClick,
+  } = props;
+
   return (
-    <div className={styles.container}>
-      <img
-        src={src}
-        className={styles["cover-image"]}
-        alt={title + "-project"}
-      />
+    <div className={styles.container} onClick={() => handleCardClick(props.index)}>
+      <Thumbnails src={thumbnail} image={image} video={video} projectName={title} />
       <div className={styles.title}>{title}</div>
       <div className={styles.description}>{description}</div>
       <div className={styles["link-container"]}>
-        <a href={projectURL} target="_blank" rel="noopener noreferrer">
-          <ExternalSVG className={styles.icon} />
-        </a>
-        <a href={githubURL} target="_blank" rel="noopener noreferrer">
+        {projectURL && (
+          <a
+            href={projectURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ExternalSVG className={styles.icon} />
+          </a>
+        )}
+        <a
+          href={githubURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
           <GithubSVG className={styles.icon} />
         </a>
       </div>
