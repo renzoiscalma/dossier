@@ -1,5 +1,6 @@
 .small {
   height: 20px;
+  font-size: 12px;
 }
 
 .medium {
@@ -10,9 +11,38 @@
   height: 100px;
 }
 
+.label {
+  display: flex;
+  align-items: center;
+}
+
 .iconContainer {
   display: flex;
   color: white;
+}
+
+.componentContainer {
+  display: flex;
+  row-gap: 4px;
+  column-gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconLabel {
+  align-self: center;
+  justify-self: center;
 }
 
 .iconContainer > svg {

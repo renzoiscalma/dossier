@@ -2,13 +2,30 @@ import { useEffect, useState } from "react";
 import commonStyles from "../../stylesheets/Common.module.css";
 import revealStyles from "../../stylesheets/Animations.module.css";
 import styles from "../../stylesheets/Skills.module.css";
-import Icon, { IconNames, icons } from "../Icon";
+import Icon, { IconNames } from "../Icon";
 
-const frontEndTech: IconNames[] = ["HTML", "CSS", "Angular", "React", "Vue", "NextJS", "d3"];
+const frontEndTech: IconNames[] = [
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Angular",
+  "React",
+  "Vue",
+  "NextJS",
+  "d3",
+];
 
-const backEndTech: IconNames[] = ["Spring", "Express", "Django", "MySQL", "MongoDB"];
+const backEndTech: IconNames[] = [
+  "GraphQL",
+  "Spring",
+  "Express",
+  "Django",
+  "MySQL",
+  "MongoDB",
+  "Redis",
+];
 
-const gameDevTech: IconNames[] = ["Godot", "Unity", "PyGame"];
+const gameDevTech: IconNames[] = ["Godot", "Unity", "PyGame", "Blit3D", "OpenGL"];
 
 const programmingLanguages: IconNames[] = [
   "Java",
@@ -29,7 +46,7 @@ const Technologies = (props: { iconNames: IconNames[]; title: string }) => {
         <div className={styles.iconsContainer}>
           {iconNames.map((icon) => (
             <>
-              <Icon name={icon} size="large" key={icon} />
+              <Icon name={icon} size="large" key={icon} label="bottom" />
             </>
           ))}
         </div>
@@ -67,6 +84,9 @@ const Skills = () => {
           <Technologies iconNames={gameDevTech} title="Game Development" />
           <Technologies iconNames={programmingLanguages} title="Programming Languages" />
         </div>
+        <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
+          <span>{`</my-skills>`}</span>
+        </h1>
       </div>
     </div>
   );

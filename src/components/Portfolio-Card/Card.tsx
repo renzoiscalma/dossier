@@ -2,6 +2,7 @@ import { ReactComponent as GithubSVG } from "../../assets/brand-github.svg";
 import { ReactComponent as ExternalSVG } from "../../assets/external-link.svg";
 import styles from "../../stylesheets/Card.module.css";
 import Project from "../../types/Project";
+import Icon, { IconNames } from "../Icon";
 import Thumbnails from "./Thumbnails";
 
 type CardProps = Project & {
@@ -50,7 +51,7 @@ const Card = (props: CardProps) => {
       <div className={styles["techstack-container"]}>
         {techStack.map((value, index) => (
           <div className={styles.pill} key={index}>
-            {value}
+            <Icon name={value as IconNames} label="right" size="small" />
           </div>
         ))}
       </div>
