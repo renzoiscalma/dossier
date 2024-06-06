@@ -15,6 +15,18 @@
 .description-container {
   font-family: var(--header-font-family);
   padding: 0 24px 0 24px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.extra-description-container {
+  padding: 0 24px 0 24px;
+  font-family: var(--body-font-family);
+}
+
+.extra-description {
+  text-indent: 1.5em;
 }
 
 .coverImage {

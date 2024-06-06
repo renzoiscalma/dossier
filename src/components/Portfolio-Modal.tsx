@@ -5,6 +5,7 @@ import VideoCard from "./Portfolio-Card/VideoCard";
 import cardStyles from "../stylesheets/Card.module.css";
 import { ReactComponent as GithubSVG } from "../assets/brand-github.svg";
 import { ReactComponent as ExternalSVG } from "../assets/external-link.svg";
+import Icon, { IconNames } from "./Icon";
 type PortfolioModalProps = {
   open: boolean;
   handleClose: () => void;
@@ -62,10 +63,19 @@ const PortfolioModal = (props: PortfolioModalProps) => {
             )}
           </div>
           <div className={dialogStyles["description-container"]}>{project.description}</div>
+          {project.extraDescription && (
+            <div className={dialogStyles["extra-description-container"]}>
+              {project.extraDescription.map((value, index) => (
+                <p key={index} className={dialogStyles["extra-description"]}>
+                  {value}
+                </p>
+              ))}
+            </div>
+          )}
           <div className={cardStyles["techstack-container"]}>
             {project.techStack.map((value, index) => (
               <div className={cardStyles.pill} key={index}>
-                {value}
+                <Icon name={value as IconNames} label="right" size="small" />
               </div>
             ))}
           </div>

@@ -6,6 +6,14 @@ import Card from "../Portfolio-Card/Card";
 import { useEffect, useState } from "react";
 import PortfolioModal from "../Portfolio-Modal";
 import { portfolioData as portfolioList } from "../../portfoliodata";
+import Masonry from "react-masonry-css";
+
+const breakpointColumnsObj = {
+  default: 4,
+  1800: 3,
+  1400: 2,
+  876: 1,
+};
 
 const Portfolio = () => {
   const [shown, setShown] = useState<boolean>(false);
@@ -37,7 +45,11 @@ const Portfolio = () => {
             These are some of the projects that I have made.
           </p>
         </div>
-        <div className={styles["project-container"]}>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className={styles["project-container"]}
+          columnClassName={styles["column-project"]}
+        >
           {portfolioList.map((portfolio, index) => (
             <Card
               {...portfolio}
@@ -46,7 +58,7 @@ const Portfolio = () => {
               index={index}
             />
           ))}
-        </div>
+        </Masonry>
         <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
           <span>{`</portfolio>`}</span>
         </h1>

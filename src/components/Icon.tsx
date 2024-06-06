@@ -20,26 +20,45 @@ import { ReactComponent as TypescriptSVG } from "../assets/Icons/Typescript.svg"
 import { ReactComponent as UnitySVG } from "../assets/Icons/Unity.svg";
 import { ReactComponent as VueSVG } from "../assets/Icons/Vue.svg";
 import { ReactComponent as SpringSVG } from "../assets/Icons/Spring.svg";
+import { ReactComponent as GraphQLSVG } from "../assets/Icons/GraphQL.svg";
+import { ReactComponent as OpenGLSVG } from "../assets/Icons/OpenGL.svg";
+import { ReactComponent as MUISVG } from "../assets/Icons/MUI.svg";
+import { ReactComponent as TailwindSVG } from "../assets/Icons/Tailwind.svg";
+import { ReactComponent as RedisSVG } from "../assets/Icons/Redis.svg";
+
 import iconStyles from "../stylesheets/Icons.module.css";
+
+type PartialRecord<K extends keyof any, T> = {
+  [P in K]?: T;
+};
+
 export type IconNames =
   | "Angular"
+  | "Blit3D"
   | "CPP"
+  | "C++"
   | "CSharp"
   | "CSS"
   | "d3"
   | "Django"
   | "Express"
   | "Godot"
+  | "GraphQL"
+  | "GDScript"
   | "HTML"
   | "Java"
   | "Javascript"
   | "Lua"
   | "MongoDB"
   | "MySQL"
+  | "MUI"
   | "NextJS"
+  | "OpenGL"
   | "PyGame"
   | "Python"
   | "React"
+  | "Redis"
+  | "Tailwind"
   | "Typescript"
   | "Unity"
   | "Vue"
@@ -48,31 +67,45 @@ export type IconNames =
 type IconProps = {
   name: IconNames;
   size: "small" | "medium" | "large";
+  label?: "bottom" | "right";
 };
 
 export const icons: Record<IconNames, React.ReactElement> = {
   Angular: <AngularSVG />,
+  Blit3D: <CPPSVG />,
   CPP: <CPPSVG />,
+  "C++": <CPPSVG />,
   CSharp: <CSharpSVG />,
   CSS: <CSSSVG />,
   d3: <D3SVG />,
   Django: <DjangoSVG />,
   Express: <ExpressSVG />,
   Godot: <GodotSVG />,
+  GDScript: <GodotSVG />,
+  GraphQL: <GraphQLSVG />,
   HTML: <HTMLSVG />,
   Java: <JavaSVG />,
   Javascript: <JavascriptSVG />,
   Lua: <LuaSVG />,
   MongoDB: <MongoSVG />,
   MySQL: <MySQLSVG />,
+  MUI: <MUISVG />,
   NextJS: <NextJSSVG />,
+  OpenGL: <OpenGLSVG />,
   PyGame: <PyGameSVG />,
   Python: <PythonSVG />,
   React: <ReactSVG />,
+  Redis: <RedisSVG />,
+  Tailwind: <TailwindSVG />,
   Typescript: <TypescriptSVG />,
   Unity: <UnitySVG />,
   Vue: <VueSVG />,
   Spring: <SpringSVG />,
+};
+
+const specialLabels: PartialRecord<IconNames, string> = {
+  CPP: "C++",
+  CSharp: "C#",
 };
 
 const Icon = (props: IconProps) => {
@@ -82,11 +115,22 @@ const Icon = (props: IconProps) => {
     large: iconStyles.large,
   };
 
+  let label = specialLabels[props.name] ? specialLabels[props.name] : props.name;
+
+  if (!icons[props.name])
+    return <div className={`${sizesMap[props.size]} ${iconStyles.label}`}>{label}</div>;
+
+  const labelClass = props.label ? iconStyles[props.label] : "";
   return (
-    <div
-      className={`${iconStyles.iconContainer} ${iconStyles[props.name]} ${sizesMap[props.size]}`}
-    >
-      {icons[props.name]}
+    <div className={`${iconStyles.componentContainer} ${labelClass}`}>
+      <div
+        className={`${iconStyles.iconContainer} ${iconStyles[props.name]} ${sizesMap[props.size]} ${
+          iconStyles.label
+        }`}
+      >
+        {icons[props.name]}
+      </div>
+      {props.label && <div className={`${iconStyles.iconLabel}`}>{props.name}</div>}
     </div>
   );
 };

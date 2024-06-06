@@ -1,10 +1,98 @@
 .inline {
   display: inline-block;
   margin-right: 10px;
+  margin: 10px;
+}
+
+.header {
 }
 
 .career {
   font-size: 27px;
+}
+
+.careersContainer {
+  margin: 20px 20px;
+}
+
+.careerHeader {
+  display: flex;
+  align-items: center;
+}
+
+.position {
+  color: var(--text-primary);
+}
+
+.date {
+  margin-left: auto;
+}
+
+.careerDescription:first-child {
+  margin-top: 0;
+}
+
+.careerDescription {
+  /* text-indent: 1.5em; */
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.descriptionList {
+  margin: 0 10px;
+  color: var(--text-secondary);
+}
+
+.descriptionList span {
+  color: var(--text-primary);
+}
+
+.links {
+  margin-left: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.pageHeaderContainer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.csvIconContainer {
+  padding: 5px;
+}
+
+.csvIcon {
+  width: 50px;
+  height: 50px;
+  color: var(--text-secondary);
+}
+
+.csvIconContainer:hover {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgba(22, 70, 87, 0.329);
+}
+
+.menu {
+  background-color: var(--text-secondary) !important;
+  border-radius: 12px;
+}
+
+.menuItem {
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+
+.menuItem > a {
+  color: var(--background);
+}
+
+.menuItem:hover {
+  color: var(--text-secondary);
 }
 
 @media only screen and (max-width: 1300px) {
@@ -23,6 +111,10 @@
   }
 
   .career {
+    font-size: 18px;
+  }
+
+  .careerDescription {
     font-size: 18px;
   }
 }

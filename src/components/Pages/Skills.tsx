@@ -2,7 +2,59 @@ import { useEffect, useState } from "react";
 import commonStyles from "../../stylesheets/Common.module.css";
 import revealStyles from "../../stylesheets/Animations.module.css";
 import styles from "../../stylesheets/Skills.module.css";
-import Icon, { IconNames, icons } from "../Icon";
+import Icon, { IconNames } from "../Icon";
+
+const frontEndTech: IconNames[] = [
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Angular",
+  "React",
+  "Vue",
+  "NextJS",
+  "d3",
+];
+
+const backEndTech: IconNames[] = [
+  "GraphQL",
+  "Spring",
+  "Express",
+  "Django",
+  "MySQL",
+  "MongoDB",
+  "Redis",
+];
+
+const gameDevTech: IconNames[] = ["Godot", "Unity", "Blit3D", "PyGame", "OpenGL"];
+
+const programmingLanguages: IconNames[] = [
+  "Java",
+  "Javascript",
+  "CPP",
+  "CSharp",
+  "Typescript",
+  "Python",
+  "Lua",
+];
+
+const Technologies = (props: { iconNames: IconNames[]; title: string }) => {
+  const { iconNames, title } = props;
+  return (
+    <div className={styles.techsContainer}>
+      <div className={styles.techContainer}>
+        <h2>{title}</h2>
+        <div className={styles.iconsContainer}>
+          {iconNames.map((icon) => (
+            <>
+              <Icon name={icon} size="large" key={icon} label="bottom" />
+            </>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Skills = () => {
   const [shown, setShown] = useState<boolean>(false);
 
@@ -24,15 +76,21 @@ const Skills = () => {
         <p className={commonStyles["paragraph"]}>
           Over the years I have learned a lot about software development and web development in
           general. I've been able to apply my knowledge to build and maintain products for a lot of
-          clients and companies, and here are some of the tools that I have used.
+          clients and companies, and here are some of the skills that I have used.
         </p>
-        <div className={styles.iconsContainer}>
-          {(Object.keys(icons) as IconNames[]).map((icon) => (
-            <>
-              <Icon name={icon} size="large" key={icon} />
-            </>
-          ))}
+        <div className={styles.techsContainer}>
+          <Technologies key={"frontend"} iconNames={frontEndTech} title="Frontend Technologies" />
+          <Technologies key={"backend"} iconNames={backEndTech} title="Backend Technologies" />
+          <Technologies key={"gameDev"} iconNames={gameDevTech} title="Game Development" />
+          <Technologies
+            key={"progLang"}
+            iconNames={programmingLanguages}
+            title="Programming Languages"
+          />
         </div>
+        <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
+          <span>{`</my-skills>`}</span>
+        </h1>
       </div>
     </div>
   );
