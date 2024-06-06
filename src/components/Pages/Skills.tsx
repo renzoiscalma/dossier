@@ -25,7 +25,7 @@ const backEndTech: IconNames[] = [
   "Redis",
 ];
 
-const gameDevTech: IconNames[] = ["Godot", "Unity", "PyGame", "Blit3D", "OpenGL"];
+const gameDevTech: IconNames[] = ["Godot", "Unity", "Blit3D", "PyGame", "OpenGL"];
 
 const programmingLanguages: IconNames[] = [
   "Java",
@@ -79,10 +79,14 @@ const Skills = () => {
           clients and companies, and here are some of the skills that I have used.
         </p>
         <div className={styles.techsContainer}>
-          <Technologies iconNames={frontEndTech} title="Frontend Technologies" />
-          <Technologies iconNames={backEndTech} title="Backend Technologies" />
-          <Technologies iconNames={gameDevTech} title="Game Development" />
-          <Technologies iconNames={programmingLanguages} title="Programming Languages" />
+          <Technologies key={"frontend"} iconNames={frontEndTech} title="Frontend Technologies" />
+          <Technologies key={"backend"} iconNames={backEndTech} title="Backend Technologies" />
+          <Technologies key={"gameDev"} iconNames={gameDevTech} title="Game Development" />
+          <Technologies
+            key={"progLang"}
+            iconNames={programmingLanguages}
+            title="Programming Languages"
+          />
         </div>
         <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>
           <span>{`</my-skills>`}</span>

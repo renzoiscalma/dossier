@@ -27,6 +27,11 @@ import { ReactComponent as TailwindSVG } from "../assets/Icons/Tailwind.svg";
 import { ReactComponent as RedisSVG } from "../assets/Icons/Redis.svg";
 
 import iconStyles from "../stylesheets/Icons.module.css";
+
+type PartialRecord<K extends keyof any, T> = {
+  [P in K]?: T;
+};
+
 export type IconNames =
   | "Angular"
   | "Blit3D"
@@ -98,6 +103,11 @@ export const icons: Record<IconNames, React.ReactElement> = {
   Spring: <SpringSVG />,
 };
 
+const specialLabels: PartialRecord<IconNames, string> = {
+  CPP: "C++",
+  CSharp: "C#",
+};
+
 const Icon = (props: IconProps) => {
   const sizesMap = {
     small: iconStyles.small,
@@ -105,8 +115,10 @@ const Icon = (props: IconProps) => {
     large: iconStyles.large,
   };
 
+  let label = specialLabels[props.name] ? specialLabels[props.name] : props.name;
+
   if (!icons[props.name])
-    return <div className={`${sizesMap[props.size]} ${iconStyles.label}`}>{props.name}</div>;
+    return <div className={`${sizesMap[props.size]} ${iconStyles.label}`}>{label}</div>;
 
   const labelClass = props.label ? iconStyles[props.label] : "";
   return (
