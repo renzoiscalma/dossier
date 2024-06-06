@@ -17,8 +17,14 @@ body {
 @font-face {
   font-family: GlacialIndifference-Regular;
   font-style: normal;
-  src: local("GlacialIndifference-Regular"),
-    url("./fonts/GlacialIndifference-Regular.otf");
+  src: local("GlacialIndifference-Regular"), url("./fonts/GlacialIndifference-Regular.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  src: local("Inter-Regular"), url("./fonts/Inter-Regular.ttf");
   font-display: swap;
 }
 
@@ -41,6 +47,15 @@ body {
   --accent: purple;
   --pill: rgba(0, 0, 0, 0.1);
   --background-img-url: url(./assets/circle-scatter-bg-light.svg);
+}
+
+:root .szh-menu__arrow {
+  background-color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
 [data-theme="DARK"] {
