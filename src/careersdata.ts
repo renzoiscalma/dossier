@@ -6,7 +6,7 @@ export const careers: Experience[] = [
     position: "Software Engineer",
     date: "Jun 2023 — Present",
     descriptions: [
-      "Developed and deployed Google Apps Script Web Pages for various agencies' clients, enhancing functionality and user experience.",
+      "Developed production level Google Apps Script Web Pages for various agencies' clients, enhancing functionality and user experience.",
       "Managed multiple projects simultaneously, ensuring timely delivery and quality results. The projects utilize Vue, and React, and NextJS.",
       "Developed proof of concepts to demonstrate project feasibility and secure client buy-in.",
     ],

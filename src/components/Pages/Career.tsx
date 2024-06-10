@@ -68,7 +68,7 @@ const Career = () => {
             <div className={styles.csvIconContainer}>
               <button ref={menuBtnRef} {...anchorProps} className={styles.csvButton}>
                 <div className={styles.csvButtonText}>
-                  <div>Download CV</div>
+                  <div>Grab my CV</div>
                   <SVGIcon className={styles.csvIcon} />
                 </div>
               </button>
