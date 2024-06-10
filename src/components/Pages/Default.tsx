@@ -20,11 +20,7 @@ const Default = () => {
         ${shown ? revealStyles.reveal : ""}`}
     >
       <div className={styles["sidebar-left"]}>
-        <a
-          href="https://github.com/renzoiscalma/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/renzoiscalma/" target="_blank" rel="noopener noreferrer">
           <GitHubSVG className={styles.icon} />
         </a>
         <a href="mailto:jlpcalma@gmail.com">
@@ -41,7 +37,8 @@ const Default = () => {
       </div>
       <div className={`${styles["heading"]}`}>
         <h1 className={styles["heading-name"]}>Hi, I'm Renzo</h1>
-        <h1 className={styles["heading-webdev"]}>Web Developer </h1>
+        <h1 className={styles["heading-webdev"]}>Web Developer &</h1>
+        <h1 className={styles["heading-webdev"]}>Game Developer</h1>
       </div>
       <figure className={styles["portrait"]}>
         <div className={styles["img-container"]}>
@@ -60,16 +57,12 @@ const Default = () => {
       </figure>
       <div className={styles["description"]}>
         <p>
-          I'm a developer based in Canada. I make stuff happen since 2018.
-          Currently I focus on making people's experience on the web better.
+          I'm a developer based in Canada. I make stuff happen since 2018. Currently I focus on
+          making people's experience on the web better, and try to make games that are fun to play.
         </p>
         <div className={styles["desc-links"]}>
           <div className={styles.hLine} />
-          <a
-            href="https://github.com/renzoiscalma/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/renzoiscalma/" target="_blank" rel="noopener noreferrer">
             <GitHubSVG className={styles.icon} />
           </a>
           <a href="mailto:jlpcalma@gmail.com">

@@ -49,6 +49,16 @@ body {
   --background-img-url: url(./assets/circle-scatter-bg-light.svg);
 }
 
+button {
+  font-family: var(--code-font-family);
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 0.5rem;
+}
+
 :root .szh-menu__arrow {
   background-color: var(--text-secondary);
 }
