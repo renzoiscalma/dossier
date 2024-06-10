@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dossier/static/css/main.b913c4dc.css",
-    "main.js": "/dossier/static/js/main.588e6dd6.js",
+    "main.css": "/dossier/static/css/main.0cfd9e21.css",
+    "main.js": "/dossier/static/js/main.637b5c3a.js",
     "reactPlayerYouTube.js": "/dossier/static/js/reactPlayerYouTube.e717647a.chunk.js",
     "reactPlayerSoundCloud.js": "/dossier/static/js/reactPlayerSoundCloud.cbd13dd6.chunk.js",
     "reactPlayerVimeo.js": "/dossier/static/js/reactPlayerVimeo.94e7deac.chunk.js",
@@ -45,7 +45,6 @@
     "static/media/Unity.svg": "/dossier/static/media/Unity.55e299831e757c32f15ff0f1b058ea21.svg",
     "static/media/Java.svg": "/dossier/static/media/Java.3d1f1777f72c1a4ca3003a5378491322.svg",
     "static/media/Python.svg": "/dossier/static/media/Python.4298525c028749eb4fa154f8f5bd1931.svg",
-    "static/media/CV.svg": "/dossier/static/media/CV.311a9ed6f310b4b4439f71bd001a351a.svg",
     "static/media/CPP.svg": "/dossier/static/media/CPP.2441702dffa95ca3c92c20816e386640.svg",
     "static/media/GraphQL.svg": "/dossier/static/media/GraphQL.411dfe575391761bc9d9348c62a2be2a.svg",
     "static/media/Django.svg": "/dossier/static/media/Django.b062878ade3e5d6fdd56c82c5a1ca0ca.svg",
@@ -62,6 +61,7 @@
     "static/media/external-link.svg": "/dossier/static/media/external-link.b070768997d833c114d58981167a8ad1.svg",
     "index.html": "/dossier/index.html",
     "static/media/Javascript.svg": "/dossier/static/media/Javascript.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
+    "static/media/CV.svg": "/dossier/static/media/CV.49b8519085b306f885502bfd26cb59cc.svg",
     "static/media/brand-github.svg": "/dossier/static/media/brand-github.015a78b3d05600d250b77ab6c60846e4.svg",
     "static/media/React.svg": "/dossier/static/media/React.c0179ffe615cd5c204f76c7a22601cfa.svg",
     "static/media/Tailwind.svg": "/dossier/static/media/Tailwind.973c73e85d4daa24b257ba20298716c4.svg",
@@ -71,8 +71,8 @@
     "static/media/light-theme.svg": "/dossier/static/media/light-theme.c0c0f9cf804f90fbec731193677518c5.svg",
     "static/media/burger-menu.svg": "/dossier/static/media/burger-menu.bcfcf05300ed3b0bed8e1a6c76914a9c.svg",
     "static/media/email-message-inbox.svg": "/dossier/static/media/email-message-inbox.5a8d7564c6c3492b9806d8946e04d27d.svg",
-    "main.b913c4dc.css.map": "/dossier/static/css/main.b913c4dc.css.map",
-    "main.588e6dd6.js.map": "/dossier/static/js/main.588e6dd6.js.map",
+    "main.0cfd9e21.css.map": "/dossier/static/css/main.0cfd9e21.css.map",
+    "main.637b5c3a.js.map": "/dossier/static/js/main.637b5c3a.js.map",
     "reactPlayerYouTube.e717647a.chunk.js.map": "/dossier/static/js/reactPlayerYouTube.e717647a.chunk.js.map",
     "reactPlayerSoundCloud.cbd13dd6.chunk.js.map": "/dossier/static/js/reactPlayerSoundCloud.cbd13dd6.chunk.js.map",
     "reactPlayerVimeo.94e7deac.chunk.js.map": "/dossier/static/js/reactPlayerVimeo.94e7deac.chunk.js.map",
@@ -90,7 +90,7 @@
     "787.072cfc38.chunk.js.map": "/dossier/static/js/787.072cfc38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b913c4dc.css",
-    "static/js/main.588e6dd6.js"
+    "static/css/main.0cfd9e21.css",
+    "static/js/main.637b5c3a.js"
   ]
 }
