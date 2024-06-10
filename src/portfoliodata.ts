@@ -10,13 +10,15 @@ import connectFourThumb from "./assets/thumbnails/ConnectFourThumb.webm";
 import helicopterThumb from "./assets/thumbnails/HelicopterThumb.webm";
 import ringEyeThumb from "./assets/thumbnails/RingEyeThumb.webm";
 import kitchenHellThumb from "./assets/thumbnails/KitchenHellThumb.webm";
+import dungeonEscapadeThumb from "./assets/thumbnails/DungeonEscapadeThumb.webm";
+import tronThumb from "./assets/thumbnails/TronThumb.webm";
 
 export const portfolioData: Project[] = [
   {
     src: chatterImg,
     thumbnail: chatterImg,
     image: true,
-    techStack: ["React", "Typescript", "GraphQL", "Redis"],
+    techStack: ["React", "Typescript", "GraphQL", "Redis", "HTML", "CSS"],
     description: "Watch videos and chat with your friends!",
     title: "Chatter",
     githubURL: "https://github.com/renzoiscalma/chatter-web",
@@ -30,7 +32,7 @@ export const portfolioData: Project[] = [
     src: "https://youtu.be/f6deZzYAe5U",
     thumbnail: airpodsThumb,
     video: true,
-    techStack: ["Javascript", "Tailwind"],
+    techStack: ["Javascript", "Tailwind", "HTML", "CSS"],
     description: "Replicated the AirPods landing page using Vanilla JS, Tailwind and HTML.",
     title: "Airpods Landing Page Clone",
     projectURL: "https://renzoiscalma.github.io/landing-airpods/src/index.html",
@@ -54,7 +56,7 @@ export const portfolioData: Project[] = [
     src: mainPageImg,
     thumbnail: mainPageImg,
     image: true,
-    techStack: ["React", "Typescript", "MUI"],
+    techStack: ["React", "Typescript", "MUI", "HTML", "CSS"],
     description: "A simple hero page",
     title: "Main-Page",
     githubURL: "https://github.com/renzoiscalma/main-page",
@@ -74,6 +76,20 @@ export const portfolioData: Project[] = [
     extraDescription: [
       "This was one of the first games I made when delving in the world of game development. Funnily, the most challenging part that I had to code here was the particle effect and how I had to rotate the sprite based on which part of the ball collided with a wall. I thought I should just rotate it based on the ball's velocity towards the wall, but I didn't like the solution...",
       "So, I ended up just making the wall it's own entity and get the contact point for the wall for each objects that collided with it and render a specific sprite for that wall. ",
+    ],
+  },
+  {
+    src: "https://youtu.be/RVvwgIkcfws",
+    thumbnail: dungeonEscapadeThumb,
+    video: true,
+    techStack: ["Unity", "CSharp"],
+    description: "An infinite scrolling dungeon game made with Unity",
+    title: "Space Noid",
+    githubURL: "https://github.com/renzoiscalma/Dungeon-Escapade",
+    extraDescription: [
+      "Developed a cross platform mobile game that is an infinite side scrolling with Unity. What's fun about this is that the asset that I had had no jumping animation with a samurai sword, so I had to pull up Aesprite and do it myself.",
+      "Also, the background has a parallax effect with the floors so it would appear that there's more depth to the background, I though it would look cool and appropriate as well.",
+      "As for the debris from the destroyed objects, it was a simple applied force to a randomly generated 1x1 scaled image for an extra effect. ",
     ],
   },
   {
@@ -111,6 +127,20 @@ export const portfolioData: Project[] = [
     githubURL: "https://github.com/renzoiscalma/Ring-Eye",
     extraDescription: [
       "An infinite scroller game that lets you go through hoops! Some interesting implementations are the scrolling background, it only uses two instantiations of the background that wraps around when not visible on the screen.",
+    ],
+  },
+  {
+    src: "https://youtu.be/8ibDP-Iva2Q",
+    thumbnail: tronThumb,
+    video: true,
+    techStack: ["Java", "PyGame", "Python"],
+    description: "A multiplayer Tron game made with PyGame (client) and Java (server)",
+    title: "Multiplayer Tron",
+    githubURL: "https://github.com/WarrenRice/TronNBCC2024/",
+    extraDescription: [
+      "Another group project were we had to create a multiplayer game. This was interesting because we used two programming languages for this project. The server was on Java, and the client was developed using Python. (PyGame was the game's library) ",
+      "I designed and developed the backend where there could be at most 4 players in the game. Each update call in the game loop of the clients they would send out their current position, and also request the current position of other players.",
+      "This posed some problems initially as we would see that some of the clients could not equally update the other client's position since it would skip some positions. This probably happened because of the game looop being too fast and and not every position was properly requested from the server. We ended up fixing this by at least returning the last five positions of the player. ",
     ],
   },
   {

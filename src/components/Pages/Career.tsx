@@ -47,7 +47,7 @@ const renderCareerDescriptions = (descriptions: string[]) => {
 const Career = () => {
   const [shown, setShown] = useState<boolean>(false);
   const [menuState, toggle] = useMenuState({ transition: true });
-  const menuBtnRef = useRef<SVGSVGElement>(null);
+  const menuBtnRef = useRef<HTMLButtonElement>(null);
   const { anchorProps, hoverProps } = useHover(menuState.state, toggle);
   useEffect(() => {
     setShown(true);
@@ -66,7 +66,12 @@ const Career = () => {
           <span>{`<my-working-career>`}</span>
           <div className={styles.links}>
             <div className={styles.csvIconContainer}>
-              <SVGIcon className={styles.csvIcon} ref={menuBtnRef} {...anchorProps} />
+              <button ref={menuBtnRef} {...anchorProps} className={styles.csvButton}>
+                <div className={styles.csvButtonText}>
+                  <div>Download CV</div>
+                  <SVGIcon className={styles.csvIcon} />
+                </div>
+              </button>
               <ControlledMenu
                 {...hoverProps}
                 {...menuState}
