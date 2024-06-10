@@ -53,10 +53,10 @@
 
 .img-custom-border-container {
   position: absolute;
-  width: 22em;
-  height: 16em;
-  margin-top: -4em;
-  margin-left: 2em;
+  width: 25em;
+  height: 17em;
+  margin-top: -5em;
+  margin-left: 9em;
 }
 
 .img-custom-border-right {
@@ -85,6 +85,7 @@
   justify-content: flex-end;
   margin-left: 1em;
   height: 100%;
+  white-space: nowrap;
 }
 
 .heading > h1 {
