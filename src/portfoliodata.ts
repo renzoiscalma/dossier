@@ -84,7 +84,7 @@ export const portfolioData: Project[] = [
     video: true,
     techStack: ["Unity", "CSharp"],
     description: "An infinite scrolling dungeon game made with Unity",
-    title: "Space Noid",
+    title: "Dungeon Escapade",
     githubURL: "https://github.com/renzoiscalma/Dungeon-Escapade",
     extraDescription: [
       "Developed a cross platform mobile game that is an infinite side scrolling with Unity. What's fun about this is that the asset that I had had no jumping animation with a samurai sword, so I had to pull up Aesprite and do it myself.",
