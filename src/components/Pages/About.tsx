@@ -39,14 +39,13 @@ const About = () => {
           Finishing things fast 💨 & Planning things ✍️
         </h2>
         <p className={commonStyles["paragraph"]}>
-          I always strive to deliver projects as fast as possible. We know the consequence of
-          finishing projects quickly is the accuracy of the project. In order to mitigate mistakes
-          that is possible to make is to have a very great plan on how we'll be able to tackle the
-          project. Fortunately, I love planning things. Planning is one of the favorite things that
-          I do when I work on projects. I take my time to plan and organize things. This makes life
-          easier for both my clients and myself because we are able to harmonize the goals that we
-          intend to finish on specific dates. Basically keep up with the set deadlines that we
-          intend to finish.
+          I always strive to deliver projects as fast as possible. There is always a trade-off with
+          the quality of the project over the speed of delivery. For me, I always strive to achieve
+          both of those without compromising each other. In order to do this, I always tackle
+          problems with a careful plan. Fortunately, I also love planning things out, it is one of
+          the favorite process that I do when I begin with projects that I will be handling. I take
+          my time to plan and organize things, and based from experience, tackling problems with a
+          plan will always have merits over tackling problems without a plan.
         </p>
       </div>
       <h1 className={`${commonStyles.heading} ${commonStyles["end-heading"]}`}>

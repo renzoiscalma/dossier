@@ -130,7 +130,7 @@ const Icon = (props: IconProps) => {
       >
         {icons[props.name]}
       </div>
-      {props.label && <div className={`${iconStyles.iconLabel}`}>{props.name}</div>}
+      {props.label && <div className={`${iconStyles.iconLabel}`}>{label}</div>}
     </div>
   );
 };
