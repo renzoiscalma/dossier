@@ -1,6 +1,6 @@
 import Project from "./types/Project";
 import chatterImg from "./assets/chatter-cover.png";
-import dossierImg from "./assets/dossier-cover.png";
+import projectVThumb from "./assets/thumbnails/ProjectVThumb.webm";
 import mainPageImg from "./assets/main-page.png";
 import spaceNoidThumb from "./assets/thumbnails/SpaceNoid.webm";
 import airpodsThumb from "./assets/thumbnails/Airpods.webm";
@@ -63,6 +63,21 @@ export const portfolioData: Project[] = [
     projectURL: "https://renzoiscalma.github.io/main-page/",
     extraDescription: [
       "Another fun page that I personally created. Despite having a fair amount of frontend experience when developing this, I realized that I never made a landing page since most of the time I dealt with enterprise web applications... So I ended up crafting one. I mainly focused on using flexbox for everything and making it responsive.",
+    ],
+  },
+  {
+    src: "https://youtu.be/mm8JHAU06-A",
+    thumbnail: projectVThumb,
+    video: true,
+    techStack: ["CSharp", "Unity"],
+    description: "A 2D top down action roguelike survival game made with Unity.",
+    title: "Project V",
+    githubURL: "https://github.com/renzoiscalma/Project-V",
+    extraDescription: [
+      "Project V is a 2D action game where you try to survive from hordes of monsters. The game includes 6 upgrade perks to strengthen your character. The goal is to survive as long as possible.",
+      "As time progresses enemies will spawn more frequently and the game will become more difficult. There is are enemies such as bats and ogres that will try to defeat you. Try defeating them first!",
+      "The is a very fun experience to play, and develop considering it was one of the first games I made with Unity. I focused on a component based architecture, and boy it really was worth it because adding features to the game was easy because of the archictecture.",
+      "Interesting optimization for the game was the use a scrolling world, essentially you'll be roaming around a 9x9 2D grid that wraps itself around so it would look like you have an endless world. This was a very fun challenge to implement.",
     ],
   },
   {
